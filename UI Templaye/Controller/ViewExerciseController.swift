@@ -53,7 +53,10 @@ extension ViewExerciseController: UICollectionViewDelegate,UICollectionViewDataS
 }
 extension ViewExerciseController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (355 / 2), height: (250 / 2))
+        
+        print("frame width: \(self.view?.view.frame.width)")
+        
+        return CGSize(width: ((self.view!.view.frame.width - 70) / 2), height: (250 / 2))
     }
     
     
