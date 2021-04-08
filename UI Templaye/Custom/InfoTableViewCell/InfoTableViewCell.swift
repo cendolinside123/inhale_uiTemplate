@@ -80,8 +80,8 @@ class InfoTableViewCell: UITableViewCell {
         imageInfo.translatesAutoresizingMaskIntoConstraints = false
         //labelInfo.translatesAutoresizingMaskIntoConstraints = false
         
-        constraints += [NSLayoutConstraint(item: imageBackground, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 45)]
-        //constraints += [NSLayoutConstraint(item: imageBackground, attribute: .width, relatedBy: .equal, toItem: imageBackground, attribute: .height, multiplier: 1, constant: 0)]
+        constraints += [NSLayoutConstraint(item: imageBackground, attribute: .width, relatedBy: .equal, toItem: contentView, attribute: .height, multiplier: 3.3/5, constant: 0)]
+        constraints += [NSLayoutConstraint(item: imageBackground, attribute: .width, relatedBy: .equal, toItem: imageBackground, attribute: .height, multiplier: 1, constant: 0)]
         
         let hImageInfo = "H:|-10-[imageInfo]-10-|"
         let vImageInfo = "V:|-10-[imageInfo]-10-|"
